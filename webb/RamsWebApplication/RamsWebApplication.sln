@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RamsWebApplication", "RamsWebApplication\RamsWebApplication.csproj", "{E15C4208-C0F8-463E-9039-C76E712DF02C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RamsWebApplication.Tests", "RamsWebApplication.Tests\RamsWebApplication.Tests.csproj", "{75B5CCEA-AA84-44F4-8379-E64AE75DF0CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E15C4208-C0F8-463E-9039-C76E712DF02C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E15C4208-C0F8-463E-9039-C76E712DF02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E15C4208-C0F8-463E-9039-C76E712DF02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E15C4208-C0F8-463E-9039-C76E712DF02C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75B5CCEA-AA84-44F4-8379-E64AE75DF0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75B5CCEA-AA84-44F4-8379-E64AE75DF0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75B5CCEA-AA84-44F4-8379-E64AE75DF0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75B5CCEA-AA84-44F4-8379-E64AE75DF0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

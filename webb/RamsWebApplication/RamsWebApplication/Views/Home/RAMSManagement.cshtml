@@ -1,0 +1,55 @@
+﻿@model IEnumerable<RamsWebApplication.Models.Rams>
+
+@{
+    ViewBag.Title = "RAMSManagement";
+}
+
+<h2>RAMSManagement</h2>
+<div>
+    <table>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.First().SiteName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.First().SurveyType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.First().LeadSurveyor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.First().DAteOfSurvey)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.First().LastEditedDateandTime)
+            </th>
+        </tr>
+
+        @foreach (var m in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem=>m.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem=>m.SiteName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem=>m.SurveyType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem=>m.LeadSurveyor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem=>m.DAteOfSurvey)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem=>m.LastEditedDateandTime)
+                </td>
+            </tr> 
+        }
+    </table>
+</div>
