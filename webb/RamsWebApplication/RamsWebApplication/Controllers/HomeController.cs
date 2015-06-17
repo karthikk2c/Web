@@ -11,7 +11,7 @@ namespace RamsWebApplication.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.kjhd;sjaldnsaklncskaln";
+            ViewBag.Message = "Modify this template by karthik";
 
             return View();
         }
