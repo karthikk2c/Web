@@ -9,7 +9,8 @@
     <table>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.First().Id)
+                @Html.DisplayNameFor(model => model.First().Id) &
+                @Html.DisplayNameFor(model=>model.First().Version)
             </th>
             <th>
                 @Html.DisplayNameFor(model=>model.First().SiteName)
@@ -21,7 +22,7 @@
                 @Html.DisplayNameFor(model=>model.First().LeadSurveyor)
             </th>
             <th>
-                @Html.DisplayNameFor(model=>model.First().DAteOfSurvey)
+                @Html.ActionLink("Survey Date","RAMSManagement",new{sortOrder=ViewBag.DateSortParm})
             </th>
             <th>
                 @Html.DisplayNameFor(model=>model.First().LastEditedDateandTime)
@@ -33,6 +34,7 @@
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem=>m.Id)
+                    @Html.DisplayFor(modelItem=>m.Version)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem=>m.SiteName)

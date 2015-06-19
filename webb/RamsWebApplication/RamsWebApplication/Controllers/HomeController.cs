@@ -7,8 +7,10 @@ using RamsWebApplication.Models;
 
 namespace RamsWebApplication.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
+        RamsEntities db = new RamsEntities();
         public ActionResult Index()
         {
             ViewBag.Message = "Modify this template by karthik";
@@ -29,11 +31,21 @@ namespace RamsWebApplication.Controllers
 
             return View();
         }
-        public ActionResult RAMSManagement()
+        public ActionResult RAMSManagement(string sortOrder)
         {
-             RamsEntities db = new RamsEntities();
-            var r=db.rams.ToList();
-            return View(r);
+            ViewBag.DateSortParm = sortOrder == "Date" ? "Date_desc" : "Date";
+            var r = from s in db.rams
+                    select s;
+            switch (sortOrder)
+            {
+                case "Date_desc":
+                    r = r.OrderByDescending(s => s.DAteOfSurvey);
+                    break;
+                default:
+                    r = r.OrderBy(s => s.DAteOfSurvey);
+                    break;
+            }
+            return View(r.ToList());
         }
     }
 }
